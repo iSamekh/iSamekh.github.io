@@ -57,7 +57,8 @@ a {
   background-color: rgb(68, 67, 67);
   color: white;
   border-radius: 50%;
-  height: auto;
+  height: 3em;
+  width: 3em;
   font-size: 1em;
   text-decoration: none;
   text-align: center;
@@ -66,26 +67,34 @@ a {
 
 .toTop {
   position: absolute;
-  left: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
   top: 2em;
 }
 
 .toRight {
   position: absolute;
   right: 2em;
-  top: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .toBottom {
   position: absolute;
-  left: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
   bottom: 2em;
 }
 
 .toLeft {
   position: absolute;
   left: 2em;
-  top: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 h1 {
