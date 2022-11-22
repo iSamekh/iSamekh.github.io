@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow: hidden; /* Hide scrollbar */
+}
+
 main, div {
   width: 100vw;
   height: 100vh;
