@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Orbitron', sans-serif;
-  
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -19,6 +19,7 @@ body {
 main, div {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 main::before {
@@ -29,6 +30,9 @@ main::before {
 div {
   width: 100vw;
   height: 100vh;
+  position: relative;
+  left: 100vw;
+  top: -100vh;
 }
 
 #knowledgePage {
