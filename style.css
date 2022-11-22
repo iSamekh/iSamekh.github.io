@@ -9,6 +9,10 @@ div {
   height: 100vh;
 }
 
+div #aboutPage {
+  background-color: black;
+}
+
 p {
   color: blue;
 }
