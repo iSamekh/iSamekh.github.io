@@ -30,21 +30,27 @@ main::before {
 div {
   width: 100vw;
   height: 100vh;
+}
+
+#knowledgePage {
+  background-color: aqua;
   position: relative;
   left: 100vw;
   top: -100vh;
 }
 
-#knowledgePage {
-  background-color: aqua;
-}
-
 #projectsPage {
   background-color: gold;
+  position: relative;
+  left: -100vw;
+  top: 100vh;
 }
 
 #contactPage {
   background-color: tomato;
+  position: relative;
+  left: 100vw;
+  top: 100vh;
 }
 
 h1 {
