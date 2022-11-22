@@ -4,12 +4,21 @@
   box-sizing: border-box;
 }
 
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  background-color: pink;
+}
+
 div {
   width: 100vw;
   height: 100vh;
+  display: inline-block;
 }
 
-div #aboutPage {
+div #contactPage {
   background-color: black;
 }
 
