@@ -57,9 +57,33 @@ a {
   background-color: black;
   color: white;
   border-radius: 50%;
+  width: 2em;
+  height: 2em;
 }
 
+.toTop {
+  position: absolute;
+  left: 50%;
+  top: 2em;
+}
 
+.toRight {
+  position: absolute;
+  right: 2em;
+  top: 50%;
+}
+
+.toBottom {
+  position: absolute;
+  left: 50%;
+  bottom: 2em;
+}
+
+.toLeft {
+  position: absolute;
+  left: 2em;
+  top: 50%;
+}
 
 h1 {
   font-weight: 900;
