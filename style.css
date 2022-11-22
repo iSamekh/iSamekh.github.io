@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 200vw;
+  height: 200vh;
+}
+
 p {
   color: blue;
 }
