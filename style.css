@@ -53,6 +53,14 @@ div {
   top: -200vh;
 }
 
+a {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+
+
 h1 {
   font-weight: 900;
   font-size: 4em;
