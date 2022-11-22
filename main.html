@@ -9,30 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
   </head>
 
-  <body onClick="test()">
-    <main>
+  <body>
+    <main id="aboutMe" onClick="test()">
       <h1>First Page2</h1>
       <p>Bio goes here</p>
-      <button>Right</button>
-      <button>Down</button>
+      <button href="#knowledgePage">Right</button>
+      <button href="#projectsPage">Down</button>
     </main>
 
     <div id="knowledgePage">
       <p>Knowledge Page</p>
-      <button>Left</button>
-      <button>Down</button>
+      <button href="#aboutMe">Left</button>
+      <button href="#contactPage">Down</button>
     </div>
 
     <div id="projectsPage">
       <p>Projects Page</p>
-      <button>Top</button>
-      <button>Right</button>
+      <button href="#aboutMe">Top</button>
+      <button href="#contactPage">Right</button>
     </div>
 
     <div id="contactPage">
       <p>Contacts Page</p>
-      <button>Top</button>
-      <button>Right</button>
+      <button href="#knowledgePage">Top</button>
+      <button href="#projectsPage">Left</button>
     </div>
   </body>
 
