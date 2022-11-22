@@ -57,13 +57,11 @@ a {
   background-color: rgb(68, 67, 67);
   color: white;
   border-radius: 50%;
-  width: 5em;
-  height: 5em;
+  height: auto;
   font-size: 1em;
   text-decoration: none;
   text-align: center;
-  align-content: center;
-  padding: auto;
+  padding: 5em;
 }
 
 .toTop {
