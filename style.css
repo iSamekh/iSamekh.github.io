@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
 }
-
 
 main {
   width: 100vw;
@@ -18,10 +18,15 @@ div {
   display: inline-block;
 }
 
-div #contactPage {
+div, #contactPage {
   background-color: black;
 }
 
+h1 {
+  font-weight: 900;
+}
+
 p {
+  font-weight: 400;
   color: blue;
 }
