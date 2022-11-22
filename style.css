@@ -33,6 +33,8 @@ div {
 
 h1 {
   font-weight: 900;
+  font-size: 4em;
+  text-align: center;
 }
 
 p {
@@ -40,4 +42,5 @@ p {
   color: whitesmoke;
   margin: 0;
   font-size: 3em;
+  text-align: center;
 }
