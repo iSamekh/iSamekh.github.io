@@ -18,7 +18,7 @@ div {
   display: inline-block;
 }
 
-div, #contactPage {
+div #contactPage {
   background-color: black;
 }
 
