@@ -8,18 +8,23 @@
 main {
   width: 100vw;
   height: 100vh;
-  display: inline-block;
-  background-color: pink;
 }
 
 div {
   width: 100vw;
   height: 100vh;
-  display: inline-block;
+}
+
+#knowledgePage {
+  background-color: aqua;
+}
+
+#projectsPage {
+  background-color: gold;
 }
 
 #contactPage {
-  background-color: black;
+  background-color: tomato;
 }
 
 h1 {
@@ -28,5 +33,5 @@ h1 {
 
 p {
   font-weight: 400;
-  color: blue;
+  color: whitesmoke;
 }
