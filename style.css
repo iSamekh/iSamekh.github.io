@@ -10,6 +10,7 @@ html {
 }
 
 main {
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -21,21 +22,21 @@ div {
 
 #knowledgePage {
   background-color: aqua;
-  position: absolute;
+  position: relative;
   right: 100vw;
   top: 0vh;
 }
 
 #projectsPage {
   background-color: gold;
-  position: absolute;
+  position: relative;
   right: 0vw;
   top: 100vh;
 }
 
 #contactPage {
   background-color: tomato;
-  position: absolute;
+  position: relative;
   right: 100vw;
   top: 100vh;
 }
