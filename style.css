@@ -9,8 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  position: relative;
+main, div {
   width: 100vw;
   height: 100vh;
 }
@@ -22,23 +21,14 @@ div {
 
 #knowledgePage {
   background-color: aqua;
-  position: relative;
-  right: 100vw;
-  top: 0vh;
 }
 
 #projectsPage {
   background-color: gold;
-  position: relative;
-  right: 0vw;
-  top: 100vh;
 }
 
 #contactPage {
   background-color: tomato;
-  position: relative;
-  right: 100vw;
-  top: 100vh;
 }
 
 h1 {
