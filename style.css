@@ -57,8 +57,9 @@ a {
   background-color: black;
   color: white;
   border-radius: 50%;
-  width: 2em;
-  height: 2em;
+  width: 4em;
+  height: 4em;
+  font-size: 1em;
 }
 
 .toTop {
