@@ -41,7 +41,7 @@ main::before, .background::before {
   width: 70vw;
   height: 70vh;
   z-index: 10;
-  background-color: rgb(197, 227, 236);
+  background-color: rgb(12, 113, 224);
   border-radius: 5%;
 }
 
