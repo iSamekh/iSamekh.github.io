@@ -22,8 +22,8 @@ main, div {
   position: relative;
 }
 
-main::before {
-  content: "EXCEEL EX EX EXE TEXTE\nEX EX EX EXE EXEEE EX\nEXEXEXE EXE";
+main::before, div::before {
+  content: "EXCEEL EX EX EXE TEXTE\a EX EX EX EXE EXE\a EE EX EXEXEXE EXE";
   font-weight: 900;
   font-size: 1em;
   color: rgb(187, 36, 36);
