@@ -44,6 +44,7 @@ main::before, .background::before {
   background-color: rgb(12, 113, 224);
   border-radius: 2em;
 }
+/*Add crimson red for Dark Mode*/
 
 div {
   width: 100vw;
