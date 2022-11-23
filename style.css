@@ -23,7 +23,8 @@ main, div {
 }
 
 main::before, div::before {
-  content: "EXCEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEXEXEXEXEXEXEX \A EX EX EX EXE EXE \A EE EX EXEXEXE EXE";
+  content: "EXCEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEXEXEXEXEXEXEX EX EX EX EXE EXE EE EX EXEXEXE EXE";
+  line-break: anywhere;
   font-weight: 900;
   font-size: 1.5em;
   color: rgb(187, 36, 36);
@@ -31,9 +32,11 @@ main::before, div::before {
 
 .pageContent {
   position: absolute;
+  left: 0;
+  right: 0;
   margin: auto;
-  width: 50vw;
-  height: 50vh;
+  width: 70vw;
+  height: 70vh;
   z-index: infinite;
   background-color: azure;
 }
