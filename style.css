@@ -38,7 +38,7 @@ main::before, .background::before {
   top: 0;
   left: 0;
   margin: auto;
-  width: 70vw;
+  width: 80vw;
   height: 70vh;
   z-index: 10;
   background-color: rgb(12, 113, 224);
