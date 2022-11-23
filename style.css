@@ -42,7 +42,7 @@ main::before, .background::before {
   height: 70vh;
   z-index: 10;
   background-color: rgb(12, 113, 224);
-  border-radius: 5%;
+  border-radius: 2em;
 }
 
 div {
