@@ -33,9 +33,11 @@ main::before, .background::before {
 
 .pageContent {
   position: absolute;
-  margin: auto;
+  right: 0;
+  bottom: 0;
   top: 0;
   left: 0;
+  margin: auto;
   width: 70vw;
   height: 70vh;
   z-index: 10;
