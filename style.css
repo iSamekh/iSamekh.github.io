@@ -33,9 +33,9 @@ main::before, .background::before {
 
 .pageContent {
   position: absolute;
+  margin: auto;
   top: 0;
   left: 0;
-  margin: auto;
   width: 70vw;
   height: 70vh;
   z-index: 10;
