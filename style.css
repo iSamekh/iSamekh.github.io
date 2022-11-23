@@ -23,8 +23,8 @@ main, div {
 }
 
 main::before {
-  content: EXCEEL EX EX EXE TEXTE;
-  color: whitesmoke;
+  content: "EXCEEL EX EX EXE TEXTE";
+  color: rgb(187, 36, 36);
 }
 
 div {
