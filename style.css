@@ -23,7 +23,9 @@ main, div {
 }
 
 main::before, div::before {
-  content: "EXCEEL EX EX EXE TEXTE\a EX EX EX EXE EXE\a EE EX EXEXEXE EXE";
+  content: "EXCEEL EX EX EXE TEXTE \A EX EX EX EXE EXE \A EE EX EXEXEXE EXE";
+  white-space: pre-wrap;
+
   font-weight: 900;
   font-size: 1em;
   color: rgb(187, 36, 36);
