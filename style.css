@@ -23,10 +23,19 @@ main, div {
 }
 
 main::before, div::before {
-  content: "EXCEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEXEXEXEXEXEXEXEXCEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEXEXEXEXEXEXEX \A EX EX EX EXE EXE \A EE EX EXEXEXE EXE";
+  content: "EXCEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEEL EX EX EXE TEXTEEXEXEXEXEXEXEXEXEXEXEXEXEXEX \A EX EX EX EXE EXE \A EE EX EXEXEXE EXE";
   font-weight: 900;
-  font-size: 1%;
+  font-size: 1.5em;
   color: rgb(187, 36, 36);
+}
+
+.pageContent {
+  position: absolute;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  z-index: infinite;
+  background-color: azure;
 }
 
 div {
