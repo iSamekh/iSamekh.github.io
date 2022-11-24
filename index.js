@@ -5,18 +5,26 @@ let scrollPage = 0;
 window.onload = () => {
   document.body.onkeydown = event => {
     switch (evend.code) {
-      case "ArrowRight":
+      case "ArrowRight": {
         event.preventDefault();
-        scrollPage += window.innerWidth;
-      case "ArrowLeft":
+        scrollPage += window.innerWidth
+        break
+      }
+      case "ArrowLeft": {
         event.preventDefault();
-        scrollPage -= window.innerWidth;
-      case "ArrowUp":
+        scrollPage -= window.innerWidth
+        break
+      }
+      case "ArrowUp": {
         event.preventDefault();
-        scrollPage += window.innerHeight;
-      case "ArrowDown":
+        scrollPage += window.innerHeight
+        break
+      }
+      case "ArrowDown": {
         event.preventDefault();
-        scrollPage -= window.innerHeight;
+        scrollPage -= window.innerHeight
+        break
+      }
     }
   }
 }
