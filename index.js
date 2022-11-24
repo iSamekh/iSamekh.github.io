@@ -28,3 +28,5 @@ window.onload = () => {
     }
   }
 }
+
+//https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
