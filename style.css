@@ -79,6 +79,8 @@ a {
   text-decoration: none;
   text-align: center;
   padding: 1em;
+
+  z-index: 20;
 }
 
 .toTop {
