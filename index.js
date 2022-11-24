@@ -1,6 +1,6 @@
 const container = document.documentElement;
 
-let scrHorizont = 0;
+let scrollHorizont = 0;
 let scrollVert = 0;
 
 window.onload = () => {
@@ -29,12 +29,14 @@ window.onload = () => {
     }
     container.scrollTo({
       top: scrollVert,
-      right: scrollHorizont,
+      left: scrollHorizont,
     })
   }
 }
-// window.onscroll = event => {
-//   scrollPage = container.scrollLeft
-// }
+window.onscroll = event => {
+  scrollHorizont = container.scrollLeft
+  scrollVert = container.scrollTop
+}
 
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
+//https://stackoverflow.com/questions/7031268/how-to-scroll-page-elements-with-the-keyboard
