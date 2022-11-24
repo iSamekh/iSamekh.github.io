@@ -46,6 +46,11 @@ main::before, .background::before {
 }
 /*Add crimson red for Dark Mode*/
 
+div {
+  width: 100vw;
+  height: 100vh;
+}
+
 #knowledgePage {
   position: relative;
   left: 100vw;
