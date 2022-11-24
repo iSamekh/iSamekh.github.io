@@ -1,7 +1,22 @@
-let n = 0;
+const container = document.documentElement;
 
-function test () {
-  n++;
-  document.querySelector('html').style.backgroundColor = `rgb(${Math.round(Math.random()*255)},${Math.round(Math.random()*255)},${Math.round(Math.random()*255)})`; 
-  document.querySelector('p').innerHTML = n + " cliques";
+let scrollPage = 0;
+
+window.onload = () => {
+  document.body.onkeydown = event => {
+    switch (evend.code) {
+      case "ArrowRight":
+        event.preventDefault();
+        scrollPage += window.innerWidth;
+      case "ArrowLeft":
+        event.preventDefault();
+        scrollPage -= window.innerWidth;
+      case "ArrowUp":
+        event.preventDefault();
+        scrollPage += window.innerHeight;
+      case "ArrowDown":
+        event.preventDefault();
+        scrollPage -= window.innerHeight;
+    }
+  }
 }
