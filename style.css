@@ -29,7 +29,7 @@ main, section {
   font-weight: 900;
   font-size: 1.5em;
   color: rgb(148, 148, 148);
-  z-index: -10;
+  z-index: 10;
 }
 
 .pageContent {
