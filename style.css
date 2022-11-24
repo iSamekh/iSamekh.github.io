@@ -16,7 +16,7 @@ body {
   overflow: hidden; /* Hide scrollbar */
 }
 
-section {
+main, div {
   width: 100vw;
   height: 100vh;
   position: relative;
