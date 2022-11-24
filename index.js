@@ -25,8 +25,14 @@ window.onload = () => {
         scrollPage -= window.innerHeight
         break
       }
-    }
+      container.scrollTo({
+        top: 0,
+        left: scrollAmount,
+    })
   }
+}
+window.onscroll = event => {
+  scrollAmount = container.scrollLeft
 }
 
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
