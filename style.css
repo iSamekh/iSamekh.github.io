@@ -31,7 +31,7 @@ section {
   overflow: hidden;
   line-break: anywhere;
   font-weight: 900;
-  font-size: 3.5vmax;
+  font-size: 2.5vmax;
   color: rgb(245, 245, 245);
   z-index: -10;
 }
