@@ -29,7 +29,7 @@ main, section {
   overflow: hidden;
   line-break: anywhere;
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 1.5vmax;
   color: rgb(245, 245, 245);
   z-index: -10;
 }
