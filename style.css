@@ -18,7 +18,8 @@ body {
 }
 
 svg {
-
+  position: absolute;
+  overflow: visible;
   z-index: 9;
 }
 
