@@ -17,6 +17,11 @@ body {
   /* Hide scrollbar */
 }
 
+svg {
+
+  z-index: 9;
+}
+
 main,
 section {
   width: 100vw;
