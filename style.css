@@ -17,6 +17,15 @@ body {
   /* Hide scrollbar */
 }
 
+img {
+  position: absolute;
+  z-index: 11;
+  width: 10vmin;
+  right: -5vmin;
+  bottom: -5vmin;
+
+}
+
 svg {
   position: absolute;
   overflow: visible;
