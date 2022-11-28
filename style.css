@@ -81,14 +81,10 @@ section {
   margin: auto;
   width: 80vw;
   height: 70vh;
-  z-index: 10;
   background-color: rgb(12, 113, 224);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 0 2vmin 1vmin rgba(0, 0, 0, 0.7);
-}
 
-.pageContent::before {
-  content: url(/img/dayMode.png);
-  z-index: 11;
+  z-index: 10;
 }
 
 /*Add crimson red for Dark Mode*/
