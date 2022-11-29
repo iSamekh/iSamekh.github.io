@@ -24,6 +24,9 @@ body {
   right: 1vw;
   bottom: 1vh;
   left: 1vw;
+  width: 20vmin;
+  height: 20vmin;
+  
   /*
   position: absolute;
   padding: 3vmin;
