@@ -1,41 +1,29 @@
-const container = document.documentElement;
-
-let scrollHorizont = 0;
-let scrollVert = 0;
-
-window.onload = () => {
-  document.body.onkeydown = event => {
-    switch (evend.code) {
-      case "ArrowRight": {
-        event.preventDefault();
-        scrollHorizont += window.innerWidth
-        break
-      }
-      case "ArrowLeft": {
-        event.preventDefault();
-        scrollHorizont -= window.innerWidth
-        break
-      }
-      case "ArrowUp": {
-        event.preventDefault();
-        scrollVert += window.innerHeight
-        break
-      }
-      case "ArrowDown": {
-        event.preventDefault();
-        scrollVert -= window.innerHeight
-        break
-      }
-    }
-    container.scrollTo({
-      top: scrollVert,
-      left: scrollHorizont,
-    })
-  }
+function toAboutMe() {
+  document.querySelector("#aboutMe").style.opacity = "1";
+  document.querySelector("#knowledgePage").style.opacity = "0";
+  document.querySelector("#projectsPage").style.opacity = "0";
+  document.querySelector("#contactPage").style.opacity = "0";
 }
-window.onscroll = event => {
-  scrollHorizont = container.scrollLeft
-  scrollVert = container.scrollTop
+
+function toKnowledgePage() {
+  document.querySelector("#aboutMe").style.opacity = "0";
+  document.querySelector("#knowledgePage").style.opacity = "1";
+  document.querySelector("#projectsPage").style.opacity = "0";
+  document.querySelector("#contactPage").style.opacity = "0";
+}
+
+function toProjectsPage() {
+  document.querySelector("#aboutMe").style.opacity = "0";
+  document.querySelector("#knowledgePage").style.opacity = "0";
+  document.querySelector("#projectsPage").style.opacity = "1";
+  document.querySelector("#contactPage").style.opacity = "0";
+}
+
+function toContactPage() {
+  document.querySelector("#aboutMe").style.opacity = "0";
+  document.querySelector("#knowledgePage").style.opacity = "0";
+  document.querySelector("#projectsPage").style.opacity = "0";
+  document.querySelector("#contactPage").style.opacity = "1";
 }
 
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
