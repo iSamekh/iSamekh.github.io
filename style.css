@@ -111,7 +111,7 @@ section {
 .toBottom,
 .toLeft {
   transition-duration: 0.6s;
-  content: url(/img/dayArrow.png);
+  content: url(/img/nightArrow.png);
   height: 5vmax;
   width: 5vmax;
   padding: 0;
