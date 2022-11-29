@@ -27,7 +27,7 @@ body {
   bottom: -10vmin;
   border-radius: 50%;
   background-color: lightblue;
-  z-index: 11;
+  z-index: 110;
 }
 
 /* img {
