@@ -16,6 +16,8 @@ Pendente:
   
 *Interface  
 -Animação botão configurações  
+-Posicionamento do botão configurações com "position: sticky;" em CSS  
+-Alt. javascript para movimentar configurações  
 -Inserir modo dia/noite  
 -Inserir switch de lingua pt-br/en-us  
 -Avaliar imagem de background gradiente nos quadros de conteúdo  

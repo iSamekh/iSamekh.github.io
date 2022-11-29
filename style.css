@@ -19,21 +19,12 @@ body {
 
 #config {
   content: url(/img/cogConfig.png);
-  position: sticky;
-  top: 1vh;
-  right: 1vw;
-  bottom: 1vh;
-  left: 1vw;
-  width: 20vmin;
-  height: 20vmin;
-  
-  /*
   position: absolute;
   padding: 3vmin;
   width: 20vmin;
   height: 20vmin;
   right: -10vmin;
-  bottom: -10vmin; */
+  bottom: -10vmin; 
   border-radius: 50%;
   background-color: lightblue;
   z-index: 110;
