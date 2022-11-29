@@ -110,7 +110,7 @@ section {
 .toRight,
 .toBottom,
 .toLeft {
-  content: url(/img/nightArrow.png);
+  content: url(/img/dayArrow.png);
   height: 5vmax;
   width: 5vmax;
   padding: 0;
