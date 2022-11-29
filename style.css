@@ -113,12 +113,22 @@ section {
 .toRight,
 .toBottom,
 .toLeft {
+  transition-duration: 0.6s;
   content:url(/img/dayArrow.png);
   height: 5vmax;
   width: 5vmax;
   padding: 0;
 
   z-index: 20;
+}
+
+.toTop:hover,
+.toRight:hover,
+.toBottom:hover,
+.toLeft:hover {
+  transition-duration: 0.6s;
+  width: 5.5vmax;
+  height: 5.5vmax;
 }
 
 .toTop {
