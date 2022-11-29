@@ -77,7 +77,8 @@ section {
   height: 70vh;
   background-color: rgb(12, 113, 224);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 0 2vmin 1vmin rgba(0, 0, 0, 0.7);
-
+  transition: 1s;
+  
   z-index: 10;
 }
 
@@ -88,29 +89,24 @@ section {
   height: 100vh;
 }
 
-#aboutMe{
-  transition: 1s;
-}
-
 #knowledgePage {
   position: relative;
   left: 100vw;
   top: -100vh;
-  transition: 1s;
 }
 
 #projectsPage {
   position: relative;
   left: 0vw;
   top: -100vh;
-  transition: 1s;
+
 }
 
 #contactPage {
   position: relative;
   left: 100vw;
   top: -200vh;
-  transition: 1s;
+
 }
 
 .toTop,
