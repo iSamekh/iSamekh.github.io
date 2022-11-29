@@ -126,13 +126,13 @@ section {
   left: 0;
   right: 0;
   margin: auto;
-  top: 2em;
+  top: 2vh;
   transform: rotate(270deg);
 }
 
 .toRight {
   position: absolute;
-  right: 2em;
+  right: 2vw;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -143,13 +143,13 @@ section {
   left: 0;
   right: 0;
   margin: auto;
-  bottom: 2em;
+  bottom: 2vh;
   transform: rotate(90deg);
 }
 
 .toLeft {
   position: absolute;
-  left: 2em;
+  left: 2vw;
   top: 0;
   bottom: 0;
   margin: auto;
