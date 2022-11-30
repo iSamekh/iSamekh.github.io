@@ -2,7 +2,7 @@ let inConfig = false;
 
 function configMenu() {
 	if(inConfig) {
-  	document.querySelector("#configMenu").style.width = "8vmin";
+  	document.querySelector("#configMenu").style.width = "0vmin";
     inConfig = false;
     }
     else {
