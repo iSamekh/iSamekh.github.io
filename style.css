@@ -38,7 +38,7 @@ body {
   bottom: 3vmin;
   border-radius: 5vmin 0 0 5vmin;
   background-color: pink;
-  transition: 1s;
+  transition: right bottom 1s;
   z-index: 19;
 }
 
