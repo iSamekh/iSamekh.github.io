@@ -30,19 +30,17 @@ body {
   z-index: 20;
 }
 
-/* #configMenu {
+#configMenu {
   position: absolute;
   height: 10vmin;
-  width: 0vmin;
+  width: 30vmin;
   right: 8vmin;
   bottom: 3vmin;
   border-radius: 5vmin 0 0 5vmin;
   background-color: pink;
   transition: 1s;
   z-index: 19;
-} */
-
-
+}
 
 /* img {
   position: absolute;
