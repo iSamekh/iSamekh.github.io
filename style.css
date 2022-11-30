@@ -21,6 +21,7 @@ body {
   content: url(/img/cogConfig.png);
   position: absolute;
   height: 10vmin;
+  width: 10vmin;
   right: 3vmin;
   bottom: 3vmin;
   border-radius: 50%;
