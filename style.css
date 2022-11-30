@@ -22,7 +22,7 @@ body {
   position: absolute;
   height: 10vmin;
   right: 3vmin;
-  bottom: 3vmin; 
+  bottom: 3vmin;
   border-radius: 50%;
   background-color: lightblue;
   transition: 1s;
@@ -34,7 +34,7 @@ body {
   height: 10vmin;
   width: 0vmin;
   right: 8vmin;
-  bottom: 3vmin; 
+  bottom: 3vmin;
   border-radius: 5vmin 0 0 5vmin;
   background-color: pink;
   transition: 1s;
