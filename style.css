@@ -33,7 +33,7 @@ body {
 #configMenu {
   position: absolute;
   height: 10vmin;
-  width: 0vmin;
+  width: 10vmin;
   right: 8vmin;
   bottom: 3vmin;
   border-radius: 5vmin 0 0 5vmin;
