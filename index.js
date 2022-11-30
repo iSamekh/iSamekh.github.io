@@ -1,17 +1,15 @@
-let inConfig = false;
+// let inConfig = false;
 
-function config() {
-	if(inConfig) {
-  	document.querySelector("#configMenu").style.width = "0vw";
-    inConfig = false;
-    }
-    else {
-    document.querySelector("#configMenu").style.width = "30vw";
-    inConfig = true;
-    } 
-}
-
-
+// function config() {
+// 	if(inConfig) {
+//   	document.querySelector("#configMenu").style.width = "0vw";
+//     inConfig = false;
+//     }
+//     else {
+//     document.querySelector("#configMenu").style.width = "30vw";
+//     inConfig = true;
+//     } 
+// }
 
 const pageContent = document.querySelectorAll(".pageContent");
 const config = document.querySelector("#config");
@@ -24,7 +22,6 @@ function toAboutMe() {
   
   config.style.right = "3vmin";
   config.style.bottom = "3vmin";
-  
 }
 
 function toKnowledgePage() {
@@ -35,7 +32,6 @@ function toKnowledgePage() {
   
   config.style.right = "-13vmin";
   config.style.bottom = "3vmin";
-  
 }
 
 function toProjectsPage() {
@@ -46,7 +42,6 @@ function toProjectsPage() {
   
   config.style.right = "3vmin";
   config.style.bottom = "-13vmin";
-  
 }
 
 function toContactPage() {
@@ -57,7 +52,6 @@ function toContactPage() {
   
   config.style.right = "-13vmin";
   config.style.bottom = "-13vmin";
-  
 }
 
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press

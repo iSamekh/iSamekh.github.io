@@ -30,7 +30,7 @@ body {
   z-index: 20;
 }
 
-#configMenu {
+/* #configMenu {
   position: absolute;
   height: 10vmin;
   width: 0vmin;
@@ -40,7 +40,7 @@ body {
   background-color: pink;
   transition: 1s;
   z-index: 19;
-}
+} */
 
 
 
@@ -180,7 +180,7 @@ h1 {
 p {
   font-weight: 400;
   margin: 0;
-  font-size: 3vmax;
-  text-align: center;
+  font-size: 3vmin;
+  text-align: left;
   color: rgb(248, 248, 248);
 }
