@@ -1,15 +1,15 @@
-// let inConfig = false;
+let inConfig = false;
 
-// function config() {
-// 	if(inConfig) {
-//   	document.querySelector("#configMenu").style.width = "0vw";
-//     inConfig = false;
-//     }
-//     else {
-//     document.querySelector("#configMenu").style.width = "30vw";
-//     inConfig = true;
-//     } 
-// }
+function configMenu() {
+	if(inConfig) {
+  	document.querySelector("#configMenu").style.width = "8vmin";
+    inConfig = false;
+    }
+    else {
+    document.querySelector("#configMenu").style.width = "30vmin";
+    inConfig = true;
+    } 
+}
 
 const pageContent = document.querySelectorAll(".pageContent");
 const config = document.querySelector("#config");
