@@ -7,8 +7,8 @@ function toAboutMe() {
   pageContent[2].style.opacity = "0";
   pageContent[3].style.opacity = "0";
   
-  config.style.right = "5vmin";
-  config.style.bottom = "5vmin";
+  config.style.right = "20vmin";
+  config.style.bottom = "20vmin";
   
 }
 
@@ -18,8 +18,8 @@ function toKnowledgePage() {
   pageContent[2].style.opacity = "0";
   pageContent[3].style.opacity = "0";
   
-  config.style.right = "-5vmin";
-  config.style.bottom = "5vmin";
+  config.style.right = "-20vmin";
+  config.style.bottom = "20vmin";
   
 }
 
@@ -29,8 +29,8 @@ function toProjectsPage() {
   pageContent[2].style.opacity = "1";
   pageContent[3].style.opacity = "0";
   
-  config.style.right = "5vmin";
-  config.style.bottom = "-5vmin";
+  config.style.right = "20vmin";
+  config.style.bottom = "-20vmin";
   
 }
 
@@ -40,8 +40,8 @@ function toContactPage() {
   pageContent[2].style.opacity = "0";
   pageContent[3].style.opacity = "1";
   
-  config.style.right = "-5vmin";
-  config.style.bottom = "-5vmin";
+  config.style.right = "-20vmin";
+  config.style.bottom = "-20vmin";
   
 }
 
