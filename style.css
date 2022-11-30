@@ -26,7 +26,7 @@ body {
   bottom: 3vmin;
   border-radius: 50%;
   background-color: lightblue;
-  transition: 1s;
+  transition: right 1s, bottom 1s;
   z-index: 20;
 }
 
@@ -38,7 +38,7 @@ body {
   bottom: 3vmin;
   border-radius: 5vmin 0 0 5vmin;
   background-color: pink;
-  transition: border-radius 1s;
+  transition: 1s;
   z-index: 19;
 }
 
