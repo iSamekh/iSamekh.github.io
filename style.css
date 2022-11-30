@@ -20,7 +20,6 @@ body {
 #config {
   content: url(/img/cogConfig.png);
   position: absolute;
-  padding: 2vmin;
   width: 15vmin;
   right: 5vw;
   bottom: 5vh; 
