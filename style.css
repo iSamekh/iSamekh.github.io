@@ -33,7 +33,7 @@ body {
 #configMenu {
   position: absolute;
   height: 10vmin;
-  width: 30vmin;
+  width: 0vmin;
   right: 8vmin;
   bottom: 3vmin;
   border-radius: 5vmin 0 0 5vmin;
@@ -90,8 +90,8 @@ section {
   background: linear-gradient(to bottom, rgba(12, 113, 224, 0.2), rgb(12, 113, 224) 20%), url("https://t3.ftcdn.net/jpg/02/99/21/78/240_F_299217809_TnjZoIPJbHvWTqLBjDQYIJ8NfV3CKsjd.jpg");
   background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 0 2vmin 1vmin rgba(0, 0, 0, 0.7);
-  transition: 0.5s;
-
+  /*  opacity: 1; */
+  transition: opacity 0.5s;
   z-index: 10;
 }
 
