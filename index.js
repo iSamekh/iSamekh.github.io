@@ -6,10 +6,10 @@ function toAboutMe() {
   pageContent[1].style.opacity = "0";
   pageContent[2].style.opacity = "0";
   pageContent[3].style.opacity = "0";
-  config.style.top = "0vh";
-  config.style.right = "5vw";
-  config.style.bottom = "5vh";
-  config.style.left = "0vw";
+  
+  config.style.right = "5vmin";
+  config.style.bottom = "5vmin";
+  
 }
 
 function toKnowledgePage() {
@@ -17,10 +17,10 @@ function toKnowledgePage() {
   pageContent[1].style.opacity = "1";
   pageContent[2].style.opacity = "0";
   pageContent[3].style.opacity = "0";
-  config.style.top = "0vh";
-  config.style.right = "0vw";
-  config.style.bottom = "5vh";
-  config.style.left = "5vw";
+  
+  config.style.right = "-5vmin";
+  config.style.bottom = "5vmin";
+  
 }
 
 function toProjectsPage() {
@@ -28,10 +28,10 @@ function toProjectsPage() {
   pageContent[1].style.opacity = "0";
   pageContent[2].style.opacity = "1";
   pageContent[3].style.opacity = "0";
-  config.style.top = "5vh";
-  config.style.right = "5vw";
-  config.style.bottom = "0vh";
-  config.style.left = "0vw";
+  
+  config.style.right = "5vmin";
+  config.style.bottom = "-5vmin";
+  
 }
 
 function toContactPage() {
@@ -39,10 +39,10 @@ function toContactPage() {
   pageContent[1].style.opacity = "0";
   pageContent[2].style.opacity = "0";
   pageContent[3].style.opacity = "1";
-  config.style.top = "5vh";
-  config.style.right = "0vw";
-  config.style.bottom = "0vh";
-  config.style.left = "5vw";
+  
+  config.style.right = "-5vmin";
+  config.style.bottom = "-5vmin";
+  
 }
 
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
