@@ -4,12 +4,10 @@ function configMenu() {
 	if(inConfig) {
   	document.querySelector("#configMenu").style.width = "8vmin";
     inConfig = false;
-    console.log(inConfig)
     }
     else {
     document.querySelector("#configMenu").style.width = "30vmin";
     inConfig = true;
-    console.log(inConfig)
     } 
 }
 
