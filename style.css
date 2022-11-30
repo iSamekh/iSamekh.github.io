@@ -21,8 +21,8 @@ body {
   content: url(/img/cogConfig.png);
   position: absolute;
   width: 15vmin;
-  right: 5vw;
-  bottom: 5vh; 
+  right: 3vw;
+  bottom: 3vh; 
   border-radius: 50%;
   background-color: lightblue;
   transition: 1s;
