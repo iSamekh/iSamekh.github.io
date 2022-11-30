@@ -1,3 +1,5 @@
+//https://stackoverflow.com/questions/6338217/get-a-css-value-with-javascript
+
 let inConfig = false;
 
 function configMenu() {
