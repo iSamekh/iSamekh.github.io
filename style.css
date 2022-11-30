@@ -130,7 +130,7 @@ section {
 
 .toRight {
   position: absolute;
-  right: -5vw;
+  right: -3vw;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -147,7 +147,7 @@ section {
 
 .toLeft {
   position: absolute;
-  left: -5vw;
+  left: -3vw;
   top: 0;
   bottom: 0;
   margin: auto;
