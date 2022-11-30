@@ -20,14 +20,14 @@ body {
 #config {
   content: url(/img/cogConfig.png);
   position: absolute;
-  padding: 3vmin;
-  width: 20vmin;
-  height: 20vmin;
-  right: -10vmin;
-  bottom: -10vmin; 
+  padding: 2vmin;
+  width: 15vmin;
+  right: 5vw;
+  bottom: 5vh; 
   border-radius: 50%;
   background-color: lightblue;
-  z-index: 110;
+  transition: 1s;
+  z-index: 20;
 }
 
 /* img {
