@@ -20,7 +20,7 @@ body {
 #config {
   content: url(/img/cogConfig.png);
   position: absolute;
-  width: 15vmin;
+  height: 10vmin;
   right: 3vmin;
   bottom: 3vmin; 
   border-radius: 50%;
@@ -28,6 +28,20 @@ body {
   transition: 1s;
   z-index: 20;
 }
+
+#menuConfig {
+  position: absolute;
+  height: 10vmin;
+  width: 0vmin;
+  right: 8vmin;
+  bottom: 3vmin; 
+  border-radius: 5vmin 0 0 5vmin;
+  background-color: pink;
+  transition: 1s;
+  z-index: 19;
+}
+
+
 
 /* img {
   position: absolute;

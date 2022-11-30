@@ -1,3 +1,18 @@
+let inConfig = false;
+
+function config() {
+	if(inConfig) {
+  	document.querySelector("#menuConfig").style.width = "0vw";
+    inConfig = false;
+    }
+    else {
+    document.querySelector("#menuConfig").style.width = "30vw";
+    inConfig = true;
+    } 
+}
+
+
+
 const pageContent = document.querySelectorAll(".pageContent");
 const config = document.querySelector("#config");
 
