@@ -8,9 +8,22 @@
   box-sizing: border-box;
 }
 
+
 html {
+  --color-0: black;
+  --color-1: white;
+  --color-2: whitesmoke;
+  --color-3: rgb(12, 113, 224);
   scroll-behavior: smooth;
 }
+
+.dark-mode {
+  --color-0: white;
+  --color-1: black;
+  --color-2: darkgray;
+  --color-3: #990000;
+}
+
 
 body {
   overflow: hidden;
@@ -18,7 +31,7 @@ body {
 }
 
 #config {
-  background-color: white;
+  background-color: var(--color-1);
   border-radius: 50%;
   content: url(/img/cogConfig.png);
   padding: 1vmin;
@@ -27,31 +40,79 @@ body {
   bottom: 3vmin;
   height: 8vmin;
   width: 8vmin;
-  transition: right 1s, bottom 1s;
+  transition: bottom 1s;
   z-index: 20;
 }
 
 #configMenu {
-  background-color: whitesmoke;
+  background-color: var(--color-2);
   border-radius: 4vmin;
-  box-shadow: 0 0.4vmin 0.8vmin 0 rgba(0, 0, 0, 1), 0 0 2vmin 1vmin rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.3vmin 0.6vmin 0 var(--color-0), 0 0 1vmin 1vmin var(--color-0);
   height: 8vmin;
   width: 8vmin;
   position: absolute;
   right: 3vmin;
   bottom: 3vmin;
-  transition: right 1s, bottom 1s, width 0.7s;
+  transition: bottom 1s, width 1s;
   z-index: 19;
 }
 
-/* img {
-  position: absolute;
-  z-index: 11;
-  width: 10vmin;
-  right: -5vmin;
-  bottom: -5vmin;
 
-} */
+
+/*-----------------------SWITCH--------------------------*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-3);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/*-----------------------SWITCH--------------------------*/
+
+
 
 svg {
   height: -250vh;
@@ -59,6 +120,10 @@ svg {
   overflow: visible;
   position: absolute;
   z-index: 9;
+}
+
+g {
+  fill: var(--color-3);
 }
 
 main,
@@ -70,7 +135,7 @@ section {
 }
 
 .background::before {
-  color: whitesmoke;
+  color: var(--color-2);
   content: "EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND EXAMINE EXPERIENCE EXECUTE EXTEND EXCEED EXPAND ";
   font-size: 2vmax;
   font-weight: 900;
@@ -80,9 +145,9 @@ section {
 }
 
 .pageContent {
-  background: linear-gradient(to bottom, rgba(12, 113, 224, 0.2), rgb(12, 113, 224) 20%), url("/img/dayMode.jpg") bottom;
+  background: linear-gradient(to bottom, rgba(12, 113, 224, 0.2), var(--color-3) 20%), url("/img/dayMode.jpg") bottom;
   border-radius: 5vmin;
-  box-shadow: 0 0.4vmin 0.8vmin 0 rgba(0, 0, 0, 1), 0 0 2vmin 1vmin rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.4vmin 0.8vmin 0 var(--color-0), 0 0 2vmin 1vmin var(--color-0);
   height: 70vh;
   width: 80vw;
   margin: auto;
@@ -98,6 +163,7 @@ section {
 /*Add crimson red for Dark Mode*/
 
 .background {
+  background-color: var(--color-1);
   height: 100vh;
   width: 100vw;
 }
@@ -166,7 +232,7 @@ section {
 }
 
 h1 {
-  color: rgb(248, 248, 248);
+  color: var(--color-1);
   font-size: 4vmax;
   font-weight: 900;
   margin: 5vmin 0 3vmin 0;
@@ -174,7 +240,7 @@ h1 {
 }
 
 p {
-  color: rgb(248, 248, 248);
+  color: var(--color-1);
   font-size: 3vmin;
   font-weight: 400;
   margin: 0 7vmin;

@@ -26,10 +26,16 @@
 <body>
 
   <div id="config" onclick="configMenu()"></div>
-  <div id="configMenu"></div>
+
+  <div id="configMenu">
+    <label class="switch">
+      <input type="checkbox" onclick="themeChange()">
+      <span class="slider round"></span>
+    </label>
+  </div>
 
   <svg version="1.1" width="100vw" height="100vh" viewBox="-500 600 1200 1200" xmlns="http://www.w3.org/2000/svg">
-    <g fill="#005EB8">
+    <g>
       <path d="M1897 3580 c-4 -19 -12 -64 -18 -100 -35 -214 -109 -434 -214 -645
     -97 -193 -182 -312 -325 -456 -293 -295 -690 -474 -1195 -541 l-100 -13 86 -7
     c121 -10 352 -61 494 -108 141 -48 372 -160 478 -233 409 -282 677 -733 778
@@ -46,8 +52,8 @@
       <p>[X] Div #configMenu in HTML</p>
       <p>[X] configMenu in CSS</p>
       <p>[X] function config() in javascript</p>
-      <a class="toRight" href="#knowledgePage" onclick="toKnowledgePage()"></a>
-      <a class="toBottom" href="#projectsPage" onclick="toProjectsPage()"></a>
+      <a class="toRight" href="#knowledgePage" onclick="goRight()"></a>
+      <a class="toBottom" href="#projectsPage" onclick="goDown()"></a>
     </div>
   </main>
 
@@ -60,8 +66,8 @@
           target="_blank" rel="noreferrer noopener">Alura</a> and <a href="https://www.codecademy.com/profiles/iSamekh"
           target="_blank" rel="noreferrer noopener">codeCademy</a><br>Also some <a href="#projectsPage"
           onclick="toProjectsPage()">Projects</a> done.</p>
-      <a class="toLeft" href="#aboutMe" onclick="toAboutMe()"></a>
-      <a class="toBottom" href="#contactPage" onclick="toContactPage()"></a>
+      <a class="toLeft" href="#aboutMe" onclick="goLeft()"></a>
+      <a class="toBottom" href="#contactPage" onclick="goDown()"></a>
     </div>
   </section>
 
@@ -70,8 +76,8 @@
       <h1>Projects</h1>
       <p>Hosted in <a href="https://github.com/iSamekh" target="_blank" rel="noreferrer noopener">github</a><br>Galton
         Board<br>Also some <a href="#knowledgePage" onclick="toKnowledgePage()">Subjects</a> I've know about.</p>
-      <a class="toTop" href="#aboutMe" onclick="toAboutMe()"></a>
-      <a class="toRight" href="#contactPage" onclick="toContactPage()"></a>
+      <a class="toTop" href="#aboutMe" onclick="goUp()"></a>
+      <a class="toRight" href="#contactPage" onclick="goRight()"></a>
     </div>
   </section>
 
@@ -79,8 +85,8 @@
     <div class="pageContent">
       <h1>Contacts</h1>
       <p><a href="#aboutMe" onclick="toAboutMe()">Main</a></p>
-      <a class="toTop" href="#knowledgePage" onclick="toKnowledgePage()"></a>
-      <a class="toLeft" href="#projectsPage" onclick="toProjectsPage()"></a>
+      <a class="toTop" href="#knowledgePage" onclick="goUp()"></a>
+      <a class="toLeft" href="#projectsPage" onclick="goLeft()"></a>
     </div>
   </section>
 </body>
