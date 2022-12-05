@@ -14,6 +14,7 @@ html {
   --color-1: white;
   --color-2: whitesmoke;
   --color-3: rgb(12, 113, 224);
+  --arrow: url("/img/dayArrow.png");
   scroll-behavior: smooth;
 }
 
@@ -22,6 +23,7 @@ html {
   --color-1: black;
   --color-2: darkgray;
   --color-3: #990000;
+  --arrow: url("/img/nightArrow.png");
 }
 
 
@@ -190,7 +192,7 @@ section {
 .toRight,
 .toBottom,
 .toLeft {
-  content: url(/img/dayArrow.png);
+  content: var(--arrow); /*/img/dayArrow.png*/
   height: calc(4vh + 2vw);
   width: calc(2vw + 3vw);
   z-index: 20;
