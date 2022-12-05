@@ -8,24 +8,22 @@
   box-sizing: border-box;
 }
 
-
 html {
-  --color-0: black;
   --color-1: white;
   --color-2: whitesmoke;
   --color-3: rgb(12, 113, 224);
+  --banner: url("/img/dayMode");
   --arrow: url("/img/dayArrow.png");
   scroll-behavior: smooth;
 }
 
 .dark-mode {
-  --color-0: white;
   --color-1: black;
   --color-2: darkgray;
   --color-3: #990000;
+  --banner: url("/img/nightMode");
   --arrow: url("/img/nightArrow.png");
 }
-
 
 body {
   overflow: hidden;
@@ -49,7 +47,7 @@ body {
 #configMenu {
   background-color: var(--color-2);
   border-radius: 4vmin;
-  box-shadow: 0 0.3vmin 0.6vmin 0 var(--color-0), 0 0 1vmin 1vmin var(--color-0);
+  box-shadow: 0 0.3vmin 0.6vmin 0 black, 0 0 1vmin 1vmin black;
   height: 8vmin;
   width: 8vmin;
   position: absolute;
@@ -58,8 +56,6 @@ body {
   transition: bottom 1s, width 1s;
   z-index: 19;
 }
-
-
 
 /*-----------------------SWITCH--------------------------*/
 
@@ -95,7 +91,6 @@ body {
   left: 4px;
   bottom: 4px;
   background-color: var(--color-1);
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -111,10 +106,7 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-
 /*-----------------------SWITCH--------------------------*/
-
-
 
 svg {
   height: -250vh;
@@ -147,9 +139,9 @@ section {
 }
 
 .pageContent {
-  background: linear-gradient(to bottom, rgba(12, 113, 224, 0.2), var(--color-3) 20%), url("/img/dayMode.jpg") bottom;
+  background: linear-gradient(to bottom, rgba(12, 113, 224, 0.2), var(--color-3) 20%), var(--banner) bottom;
   border-radius: 5vmin;
-  box-shadow: 0 0.4vmin 0.8vmin 0 var(--color-0), 0 0 2vmin 1vmin var(--color-0);
+  box-shadow: 0 0.4vmin 0.8vmin 0 black, 0 0 2vmin 1vmin black;
   height: 70vh;
   width: 80vw;
   margin: auto;
@@ -161,8 +153,6 @@ section {
   transition: opacity 0.5s;
   z-index: 10;
 }
-
-/*Add crimson red for Dark Mode*/
 
 .background {
   background-color: var(--color-1);
@@ -192,7 +182,7 @@ section {
 .toRight,
 .toBottom,
 .toLeft {
-  content: var(--arrow); /*/img/dayArrow.png*/
+  content: var(--arrow);
   height: calc(4vh + 2vw);
   width: calc(2vw + 3vw);
   z-index: 20;
