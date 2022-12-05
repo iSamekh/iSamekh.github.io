@@ -14,6 +14,7 @@ html {
   --color-3: rgb(12, 113, 224);
   --banner: url("/img/dayMode.jpg");
   --arrow: url("/img/dayArrow.png");
+  --cog: url("/img/cogDay.png");
   scroll-behavior: smooth;
 }
 
@@ -23,6 +24,7 @@ html {
   --color-3: #990000;
   --banner: url("/img/nightMode.jpg");
   --arrow: url("/img/nightArrow.png");
+  --cog: url("/img/cogNight.png");
 }
 
 body {
@@ -33,7 +35,7 @@ body {
 #config {
   background-color: var(--color-1);
   border-radius: 50%;
-  content: url(/img/cogConfig.png);
+  content: url(--cog);
   padding: 1vmin;
   position: absolute;
   right: 3vmin;
