@@ -1,7 +1,7 @@
 # Samekh Portfólio
 
-Criado puramente por HTML5, CSS3 e javascript  
-Portfólio hospedado pelo github, apontado no site "samekh.dev" (Google domains)  
+Criado com HTML5, CSS3 e javascript  
+Portfólio hospedado pelo github, apontado pela DNS "samekh.dev" (Google domains)  
   
 Pendente:  
   
@@ -15,10 +15,7 @@ Pendente:
 -Inserir informações  
   
 *Interface  
--Animação botão configurações  
--Posicionamento do botão configurações com "position: sticky;" em CSS  
--Alt. javascript para movimentar configurações  
--Inserir modo dia/noite  
+-Animação do botão de configurações, manter o slide do botão e transportar o conteúdo de outra maneira   
 -Inserir switch de lingua pt-br/en-us  
 -Avaliar imagem de background gradiente nos quadros de conteúdo  
   
