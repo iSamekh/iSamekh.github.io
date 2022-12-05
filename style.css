@@ -12,7 +12,7 @@ html {
   --color-1: white;
   --color-2: whitesmoke;
   --color-3: rgb(12, 113, 224);
-  --banner: url("/img/dayMode");
+  --banner: url("/img/dayMode.jpg");
   --arrow: url("/img/dayArrow.png");
   scroll-behavior: smooth;
 }
@@ -21,7 +21,7 @@ html {
   --color-1: black;
   --color-2: darkgray;
   --color-3: #990000;
-  --banner: url("/img/nightMode");
+  --banner: url("/img/nightMode.jpg");
   --arrow: url("/img/nightArrow.png");
 }
 
