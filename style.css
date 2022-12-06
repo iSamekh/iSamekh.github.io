@@ -153,6 +153,7 @@ section {
   height: 70vh;
   width: 80vw;
   margin: auto;
+  opacity: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -166,6 +167,10 @@ section {
   background-color: var(--bg);
   height: 100vh;
   width: 100vw;
+}
+
+#aboutMe .pageContent {
+  opacity: 1;
 }
 
 #knowledgePage {
