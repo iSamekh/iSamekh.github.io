@@ -59,7 +59,7 @@ body {
   position: absolute;
   right: 3vmin;
   bottom: 3vmin;
-  transition: bottom 1s, width 1s;
+  transition: bottom 1s, width 0.3s;
   z-index: 19;
 }
 
@@ -88,7 +88,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: var(--svg);
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .slider:before {
@@ -99,7 +99,7 @@ body {
   left: 0.4vmin;
   bottom: 0.4vmin;
   background-color: var(--bg);
-  transition: .4s;
+  transition: 0.3s;
 }
 
 input:checked+.slider:before {
