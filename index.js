@@ -35,7 +35,7 @@ function pageMove(position) {
   actualPage += position;
   pageContent[actualPage].style.opacity = "1";
 
-  switch (position) {
+  switch (actualPage) {
     case 0:
       config.style.right = "3vw";
       config.style.bottom = "3vh";
