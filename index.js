@@ -37,6 +37,8 @@ function pageMove(position) {
 
   switch (actualPage) {
     case 0:
+      console.log("page 0 test")
+
       config.style.right = "3vw";
       config.style.bottom = "3vh";
 
@@ -45,6 +47,8 @@ function pageMove(position) {
       break;
 
     case 1:
+      console.log("page 1 test")
+
       config.style.right = "-3vw";
       config.style.bottom = "3vh";
 
@@ -53,6 +57,8 @@ function pageMove(position) {
       break;
 
     case 2:
+      console.log("page 2 test")
+
       config.style.right = "3vw";
       config.style.bottom = "-3vh";
 
@@ -61,11 +67,17 @@ function pageMove(position) {
       break;
 
     case 3:
+      console.log("page 3 test")
+
       config.style.right = "-3vw";
       config.style.bottom = "-3vh";
 
       configM.style.left = "3vw";
       configM.style.top = "3vh";
+      break;
+
+    default:
+      console.log("undefined page");
       break;
   }
 
