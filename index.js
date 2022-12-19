@@ -66,7 +66,7 @@ function pageMove(position) {
 
       configM.style.left = "";
       configM.style.right = "3vw";
-      configM.style.bottom = "-3vh";
+      configM.style.bottom = "-11vh";
       break;
 
     case 3:
