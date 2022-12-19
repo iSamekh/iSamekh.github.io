@@ -42,6 +42,7 @@ function pageMove(position) {
       config.style.right = "3vw";
       config.style.bottom = "3vh";
 
+      configM.style.left = "";
       configM.style.right = "3vw";
       configM.style.bottom = "3vh";
       break;
@@ -49,9 +50,10 @@ function pageMove(position) {
     case 1:
       console.log("page 1 test")
 
-      config.style.right = "-3vw";
+      config.style.right = "-11vw";
       config.style.bottom = "3vh";
 
+      configM.style.right = "";
       configM.style.left = "3vw";
       configM.style.bottom = "3vh";
       break;
@@ -60,20 +62,22 @@ function pageMove(position) {
       console.log("page 2 test")
 
       config.style.right = "3vw";
-      config.style.bottom = "-3vh";
+      config.style.bottom = "-11vh";
 
+      configM.style.left = "";
       configM.style.right = "3vw";
-      configM.style.top = "3vh";
+      configM.style.bottom = "-11vh";
       break;
 
     case 3:
       console.log("page 3 test")
 
-      config.style.right = "-3vw";
+      config.style.right = "-11vw";
       config.style.bottom = "-3vh";
 
+      configM.style.right = "";
       configM.style.left = "3vw";
-      configM.style.top = "3vh";
+      configM.style.bottom = "-11vh";
       break;
 
     default:
