@@ -35,6 +35,40 @@ function pageMove(position) {
   actualPage += position;
   pageContent[actualPage].style.opacity = "1";
 
+  switch (position) {
+    case 0:
+      config.style.right = "3vw";
+      config.style.bottom = "3vh";
+
+      configM.style.right = "3vw";
+      configM.style.bottom = "3vh";
+      break;
+
+    case 1:
+      config.style.right = "-3vw";
+      config.style.bottom = "3vh";
+
+      configM.style.left = "3vw";
+      configM.style.bottom = "3vh";
+      break;
+
+    case 2:
+      config.style.right = "3vw";
+      config.style.bottom = "-3vh";
+
+      configM.style.right = "3vw";
+      configM.style.top = "3vh";
+      break;
+
+    case 3:
+      config.style.right = "-3vw";
+      config.style.bottom = "-3vh";
+
+      configM.style.left = "3vw";
+      configM.style.top = "3vh";
+      break;
+  }
+
   /* config.style:
    *  fixed at right and bottom, only change the values between positive and
    *  negative for directions adjustments (transition won't work in other way)
