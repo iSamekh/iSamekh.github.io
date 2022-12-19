@@ -33,45 +33,45 @@ function pageMove(position) {
     case 0:
       console.log("page 0 test")
 
-      config.style.right = "3vmin";
-      config.style.bottom = "3vmin";
+      config.style.right = "3vw";
+      config.style.bottom = "3vh";
 
       configM.style.left = "";
-      configM.style.right = "3vmin";
-      configM.style.bottom = "3vmin";
+      configM.style.right = "3vw";
+      configM.style.bottom = "3vh";
       break;
 
     case 1:
       console.log("page 1 test")
 
-      config.style.right = "-8vmin";
-      config.style.bottom = "3vmin";
+      config.style.right = "-8vw";
+      config.style.bottom = "3vh";
 
       configM.style.right = "";
-      configM.style.left = "103vmin";
-      configM.style.bottom = "3vmin";
+      configM.style.left = "103vw";
+      configM.style.bottom = "3vh";
       break;
 
     case 2:
       console.log("page 2 test")
 
-      config.style.right = "3vmin";
-      config.style.bottom = "-8vmin";
+      config.style.right = "3vw";
+      config.style.bottom = "-8vh";
 
       configM.style.left = "";
-      configM.style.right = "3vmin";
-      configM.style.bottom = "-8vmin";
+      configM.style.right = "3vw";
+      configM.style.bottom = "-8vh";
       break;
 
     case 3:
       console.log("page 3 test")
 
-      config.style.right = "-8vmin";
-      config.style.bottom = "-8vmin";
+      config.style.right = "-8vw";
+      config.style.bottom = "-8vh";
 
       configM.style.right = "";
-      configM.style.left = "103vmin";
-      configM.style.bottom = "-8vmin";
+      configM.style.left = "103vw";
+      configM.style.bottom = "-8vh";
       break;
   }
 

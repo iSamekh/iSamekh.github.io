@@ -42,8 +42,8 @@ body {
   content: url("/img/cog.png");
   padding: 1vmin;
   position: absolute;
-  right: 3vmin;
-  bottom: 3vmin;
+  right: 3vw;
+  bottom: 3vh;
   height: 8vmin;
   width: 8vmin;
   transition: bottom 1s, right 1s;
@@ -57,8 +57,8 @@ body {
   height: 8vmin;
   width: 8vmin;
   position: absolute;
-  right: 3vmin;
-  bottom: 3vmin;
+  right: 3vw;
+  bottom: 3vh;
   transition: bottom 1s, width 0.3s;
   z-index: 19;
 }
