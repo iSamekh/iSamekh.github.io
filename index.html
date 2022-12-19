@@ -48,12 +48,12 @@
   <main id="aboutMe" class="background">
     <div class="pageContent">
       <h1>About Me</h1>
-      <p>Bio goes here <br><a href="#contactPage" onclick="goRight(), goDown()">Contact</a></p>
-      <p>[X] Div #configMenu in HTML</p>
-      <p>[X] configMenu in CSS</p>
-      <p>[X] function config() in javascript</p>
-      <a class="toRight" href="#knowledgePage" onclick="goRight()"></a>
-      <a class="toBottom" href="#projectsPage" onclick="goDown()"></a>
+      <p>Bio goes here <br><a href="#contactPage" onclick="pageMove(3)">Contact</a></p>
+      <p>Name</p>
+      <p>Age</p>
+      <p>Live in</p>
+      <a class="toRight" href="#knowledgePage" onclick="pageMove(1)"></a>
+      <a class="toBottom" href="#projectsPage" onclick="pageMove(2)"></a>
     </div>
   </main>
 
@@ -65,9 +65,9 @@
       <p>Besides official documentations, I'm usually studyng in <a href="https://cursos.alura.com.br/user/samekh"
           target="_blank" rel="noreferrer noopener">Alura</a> and <a href="https://www.codecademy.com/profiles/iSamekh"
           target="_blank" rel="noreferrer noopener">codeCademy</a><br>Also some <a href="#projectsPage"
-          onclick="goDown(), goLeft()">Projects</a> done.</p>
-      <a class="toLeft" href="#aboutMe" onclick="goLeft()"></a>
-      <a class="toBottom" href="#contactPage" onclick="goDown()"></a>
+          onclick="pageMove(1)">Projects</a> done.</p>
+      <a class="toLeft" href="#aboutMe" onclick="pageMove(-1)"></a>
+      <a class="toBottom" href="#contactPage" onclick="pageMove(2)"></a>
     </div>
   </section>
 
@@ -75,18 +75,18 @@
     <div class="pageContent">
       <h1>Projects</h1>
       <p>Hosted in <a href="https://github.com/iSamekh" target="_blank" rel="noreferrer noopener">github</a><br>Galton
-        Board<br>Also some <a href="#knowledgePage" onclick="goUp(), goRight()">Subjects</a> I've know about.</p>
-      <a class="toTop" href="#aboutMe" onclick="goUp()"></a>
-      <a class="toRight" href="#contactPage" onclick="goRight()"></a>
+        Board<br>Also some <a href="#knowledgePage" onclick="movePage(-1)">Subjects</a> I've know about.</p>
+      <a class="toTop" href="#aboutMe" onclick="movePage(-2)"></a>
+      <a class="toRight" href="#contactPage" onclick="movePage(1)"></a>
     </div>
   </section>
 
   <section id="contactPage" class="background">
     <div class="pageContent">
       <h1>Contacts</h1>
-      <p><a href="#aboutMe" onclick="goLeft(), goUp()">Main</a></p>
-      <a class="toTop" href="#knowledgePage" onclick="goUp()"></a>
-      <a class="toLeft" href="#projectsPage" onclick="goLeft()"></a>
+      <p><a href="#aboutMe" onclick="movePage(-3)">Main</a></p>
+      <a class="toTop" href="#knowledgePage" onclick="movePage(-2)"></a>
+      <a class="toLeft" href="#projectsPage" onclick="movePage(-1)"></a>
     </div>
   </section>
 </body>
