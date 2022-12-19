@@ -62,7 +62,7 @@ function pageMove(position) {
       console.log("page 2 test")
 
       config.style.right = "3vw";
-      config.style.bottom = "-3vh";
+      config.style.bottom = "-11vh";
 
       configM.style.left = "";
       configM.style.right = "3vw";
@@ -73,11 +73,11 @@ function pageMove(position) {
       console.log("page 3 test")
 
       config.style.right = "-8vw";
-      config.style.bottom = "-8vh";
+      config.style.bottom = "-11vh";
 
       configM.style.right = "";
       configM.style.left = "103vw";
-      configM.style.bottom = "-3vh";
+      configM.style.bottom = "-11vh";
       break;
   }
 
