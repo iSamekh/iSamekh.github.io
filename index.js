@@ -28,62 +28,6 @@ function pageMove(position) {
   pageContent[actualPage].style.opacity = "0";
   actualPage += position;
   pageContent[actualPage].style.opacity = "1";
-
-  switch (actualPage) {
-    case 0:
-      console.log("page 0 test")
-
-      config.style.right = "3vw";
-      config.style.bottom = "3vh";
-
-      configM.style.left = "";
-      configM.style.right = "3vw";
-      configM.style.bottom = "3vh";
-      break;
-
-    case 1:
-      console.log("page 1 test")
-
-      config.style.right = "-8vw";
-      config.style.bottom = "3vh";
-
-      configM.style.right = "";
-      configM.style.left = "103vw";
-      configM.style.bottom = "3vh";
-      break;
-
-    case 2:
-      console.log("page 2 test")
-
-      config.style.right = "3vw";
-      config.style.bottom = "-8vh";
-
-      configM.style.left = "";
-      configM.style.right = "3vw";
-      configM.style.bottom = "-8vh";
-      break;
-
-    case 3:
-      console.log("page 3 test")
-
-      config.style.right = "-8vw";
-      config.style.bottom = "-8vh";
-
-      configM.style.right = "";
-      configM.style.left = "103vw";
-      configM.style.bottom = "-8vh";
-      break;
-  }
-
-  /* config.style:
-   *  fixed at right and bottom, only change the values between positive and
-   *  negative for directions adjustments (transition won't work in other way)
-   */
-
-  /* configM.style:
-   * bottom shift between 3vh and -3vh from up to bottom
-   * shift between left and right (to properly set the menu slide direction)
-   */
 }
 
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
