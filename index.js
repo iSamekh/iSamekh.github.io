@@ -30,5 +30,8 @@ function pageMove(position) {
   pageContent[actualPage].style.opacity = "1";
 }
 
+//addEventListener("")
+
+
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
 //https://stackoverflow.com/questions/7031268/how-to-scroll-page-elements-with-the-keyboard

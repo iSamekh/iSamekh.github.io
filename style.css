@@ -38,67 +38,59 @@ body {
   /* Hide scrollbar */
 }
 
+a {
+  font-weight: 900;
+  font-size: 2.2vmin;
+  text-shadow: 0vmin -0.4vmin var(--inverse);
+  color: var(--txt)
+}
+
 nav {
-  width: 50vw;
   height: 7vh;
-  border-radius: 0px 0px 50px 50px;
+  width: 50vw;
+
+  border-radius: 4vh;
   background-color: var(--bg-content);
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   position: fixed;
-  top: 0;
+  top: 1vh;
   left: 0;
   transform: translate(50%, 0);
-  
-  z-index: 20;
-}
 
-  a {
-    font-weight: 900;
-    font-size: 2.2vmin;
-    text-shadow: 0vmin -0.4vmin var(--inverse);
-    color: var(--txt)
-  }
-
-#config {
-  background-color: white;
-  border-radius: 50%;
-  content: url("/img/cog.png");
-  padding: 1vmin;
-  position: absolute;
-  right: 3vw;
-  bottom: 3vh;
-  height: 8vmin;
-  width: 8vmin;
-  transition: bottom 1s, right 1s;
   z-index: 20;
 }
 
 #configMenu {
-  background-color: #828382;
-  border-radius: 4vmin;
-  box-shadow: 0 0.3vmin 0.6vmin 0 black, 0 0 1vmin 1vmin black;
-  height: 8vmin;
-  width: 8vmin;
-  position: absolute;
-  right: 3vw;
-  bottom: 3vh;
+  height: 5vh;
+  width: 35vw;
+
+  background-color: var(--bg-content);
+  border-radius: 4vh;
+
+  /* box-shadow: 0 0.3vmin 0.6vmin 0 black, 0 0 1vmin 1vmin black; */
+  
+  position: fixed;
+  bottom: 1vh;
+  left: 0vw;
+  transform: translate(90%, 0);
+
   transition: bottom 1s, width 0.3s;
-  z-index: 19;
+  z-index: 20;
 }
 
-#aboutMe .pageContent{
+#aboutMe .pageContent {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-#profilePic img{
+#profilePic img {
   width: 35vmin;
   height: 35vmin;
-  margin: 5vmin;
+  padding: 3vmin;
   border-radius: 50%;
 }
 
@@ -202,7 +194,7 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
-  transition:  0.5s ;
+  transition: 0.5s;
   z-index: 10;
 }
 
