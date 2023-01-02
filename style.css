@@ -38,6 +38,18 @@ body {
   /* Hide scrollbar */
 }
 
+h1 {
+  color: var(--txt);
+  font-size: 3.5vmax;
+  font-weight: 900;
+}
+
+p {
+  color: var(--txt);
+  font-size: 3vmin;
+  font-weight: 400;
+}
+
 a {
   font-weight: 900;
   font-size: 2.2vmin;
@@ -51,6 +63,7 @@ nav {
 
   border-radius: 4vh;
   background-color: var(--bg-content);
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,21 +76,35 @@ nav {
   z-index: 20;
 }
 
-#configMenu {
-  height: 5vh;
-  width: 35vw;
+#menuButton {
+  position: absolute;
+  height: 4vh;
+  width: 8vw;
+  left: calc(50% - 4vw);
+  top: -4vh;
 
-  background-color: var(--bg-content);
+  border-radius: 50% 50% 0 0;
+
+}
+
+#bottomMenu {
+  height: 6vh;
+  width: 50vw;
+
   border-radius: 4vh;
+  background-color: var(--bg-content);
 
-  /* box-shadow: 0 0.3vmin 0.6vmin 0 black, 0 0 1vmin 1vmin black; */
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   position: fixed;
-  bottom: 1vh;
-  left: 0vw;
-  transform: translate(90%, 0);
+  bottom: -4vh;
+  left: 0;
+  transform: translate(50%, 0);
 
-  transition: bottom 1s, width 0.3s;
+  animation-duration: 1s;
+
   z-index: 20;
 }
 
@@ -101,10 +128,7 @@ nav {
 /*-----------------------SWITCH--------------------------*/
 
 .switch {
-  position: relative;
-  top: 35%;
-  left: 20%;
-  display: inline-block;
+  position: absolute;
   width: 6vmin;
   height: 3.4vmin;
 }
@@ -231,15 +255,15 @@ section {
 .toBottom,
 .toLeft {
   content: var(--arrow);
-  height: calc(4vh + 2vw);
-  width: calc(2vw + 3vw);
+  height: calc(3vh + 2vw);
+  width: calc(2vw + 2vw);
   z-index: 20;
 }
 
 .toTop {
   margin: auto;
   position: absolute;
-  top: -5vh;
+  top: 2vh;
   right: 0;
   left: 0;
   transform: rotate(270deg);
@@ -249,7 +273,7 @@ section {
   margin: auto;
   position: absolute;
   top: 0;
-  right: -3vw;
+  right: 1vw;
   bottom: 0;
 }
 
@@ -257,7 +281,7 @@ section {
   margin: auto;
   position: absolute;
   right: 0;
-  bottom: -5vh;
+  bottom: 2vh;
   left: 0;
   transform: rotate(90deg);
 }
@@ -267,18 +291,26 @@ section {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -3vw;
+  left: 1vw;
   transform: rotate(180deg);
 }
 
-h1 {
-  color: var(--txt);
-  font-size: 3.5vmax;
-  font-weight: 900;
+@keyframes bottomMenuUp {
+  from {
+    bottom: -6vh;
+  }
+
+  to {
+    bottom: 1vh;
+  }
 }
 
-p {
-  color: var(--txt);
-  font-size: 3vmin;
-  font-weight: 400;
+@keyframes bottomMenuDown {
+  from {
+    bottom: 1vh;
+  }
+
+  to {
+    bottom: -6vh;
+  }
 }

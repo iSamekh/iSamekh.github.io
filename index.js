@@ -3,17 +3,20 @@ function themeChange() {
   elementBody.classList.toggle("dark-mode");
 }
 
-let inConfig = false;
+let inMenu = false;
+let bottomMenu = document.querySelector("#bottomMenu");
 
-function configMenu() {
-  if (inConfig) {
-    document.querySelector("#configMenu").style.width = "8vmin";
-    inConfig = false;
+function menuSlider() {
+  if (inMenu) {
+    bottomMenu.style.animationName = "bottomMenuDown";
+    bottomMenu.style.bottom = "-6vh";
+    inMenu = false;
   }
   else {
-    document.querySelector("#configMenu").style.width = "40vmin";
-    document.querySelector("#configMenu").style.boxShadow = "0 0.4vmin 0.8vmin 0 rgba(0, 0, 0, 1), 0 0 2vmin 1vmin rgba(0, 0, 0, 0.7);"
-    inConfig = true;
+    bottomMenu.style.animationName = "bottomMenuUp";
+    bottomMenu.style.bottom = "1vh";
+    //document.querySelector("#configMenu").style.boxShadow = "0 0.4vmin 0.8vmin 0 rgba(0, 0, 0, 1), 0 0 2vmin 1vmin rgba(0, 0, 0, 0.7);"
+    inMenu = true;
   }
 }
 
@@ -30,8 +33,12 @@ function pageMove(position) {
   pageContent[actualPage].style.opacity = "1";
 }
 
-//addEventListener("")
 
+
+
+
+
+//addEventListener("")
 
 //https://stackoverflow.com/questions/58736328/horizontally-scrolling-by-a-full-page-on-key-press
 //https://stackoverflow.com/questions/7031268/how-to-scroll-page-elements-with-the-keyboard

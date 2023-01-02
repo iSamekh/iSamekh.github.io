@@ -18,7 +18,6 @@
   <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
 </head>
@@ -32,14 +31,19 @@
     <a href="#contactPage" onclick="pageMove(-actualPage + 3)">Contact</a>
   </nav>
 
+  <div id="bottomMenu">
 
-  <div id="config" onclick="configMenu()"></div>
+    <button id="menuButton" onclick="menuSlider()">Menu</button>
 
-  <div id="configMenu">
+    <p>Day Mode</p>
+
     <label class="switch">
       <input type="checkbox" onclick="themeChange()">
       <span class="slider round"></span>
     </label>
+
+    <p>Night Mode</p>
+
   </div>
 
   <svg version="1.1" width="100vw" height="100vh" viewBox="-500 600 1200 1200" xmlns="https://www.w3.org/2000/svg">
