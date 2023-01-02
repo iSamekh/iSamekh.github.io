@@ -9,7 +9,7 @@ let bottomMenu = document.querySelector("#bottomMenu");
 function menuSlider() {
   if (inMenu) {
     bottomMenu.style.animationName = "bottomMenuDown";
-    bottomMenu.style.bottom = "-6vh";
+    bottomMenu.style.bottom = "-4vh";
     inMenu = false;
   }
   else {

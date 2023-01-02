@@ -83,12 +83,17 @@ nav {
   left: calc(50% - 4vw);
   top: -4vh;
 
-  border-radius: 50% 50% 0 0;
+  color: var(--txt);
+  font-weight: 900;
+  font-size: 1.5vmin;
 
+  border: none;
+  border-radius: 50% 50% 0 0;
+  background-color: var(--bg-content);
 }
 
 #bottomMenu {
-  height: 6vh;
+  height: 4vh;
   width: 50vw;
 
   border-radius: 4vh;
@@ -103,7 +108,7 @@ nav {
   left: 0;
   transform: translate(50%, 0);
 
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 
   z-index: 20;
 }
@@ -232,13 +237,13 @@ section {
   opacity: 1;
 }
 
-#knowledgePage {
+#applicationsPage {
   position: relative;
   left: 100vw;
   top: -100vh;
 }
 
-#projectsPage {
+#designsPage {
   position: relative;
   left: 0vw;
   top: -100vh;
@@ -297,7 +302,7 @@ section {
 
 @keyframes bottomMenuUp {
   from {
-    bottom: -6vh;
+    bottom: -4vh;
   }
 
   to {
@@ -311,6 +316,6 @@ section {
   }
 
   to {
-    bottom: -6vh;
+    bottom: -4vh;
   }
 }

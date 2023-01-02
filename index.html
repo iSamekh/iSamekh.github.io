@@ -26,8 +26,8 @@
 
   <nav>
     <a href="#aboutMe" onclick="pageMove(-actualPage)">About me</a>
-    <a href="#knowledgePage" onclick="pageMove(-actualPage + 1)">Applications</a>
-    <a href="#projectsPage" onclick="pageMove(- actualPage + 2)">Art</a>
+    <a href="#applicationsPage" onclick="pageMove(-actualPage + 1)">Applications</a>
+    <a href="#designsPage" onclick="pageMove(- actualPage + 2)">Designs</a>
     <a href="#contactPage" onclick="pageMove(-actualPage + 3)">Contact</a>
   </nav>
 
@@ -64,33 +64,31 @@
         <p>Work In Progress</p>
         <h1>About Me</h1>
         <p>Name: Eric Gomes</p>
-        <p>Age: &nbsp&nbsp&nbsp29 Years</p>
-        <p>In: Mogi das Cruzes - SP</p>
+        <p>Age: &nbsp &nbsp 29 Years</p>
+        <p>In: &nbsp&nbsp &nbsp &nbsp &nbsp Mogi das Cruzes - SP</p>
       </div>
-      <a class="toRight" href="#knowledgePage" onclick="pageMove(1)"></a>
-      <a class="toBottom" href="#projectsPage" onclick="pageMove(2)"></a>
+      <a class="toRight" href="#applicationsPage" onclick="pageMove(1)"></a>
+      <a class="toBottom" href="#designsPage" onclick="pageMove(2)"></a>
     </div>
   </main>
 
   <!-- https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8 -->
 
-  <section id="knowledgePage" class="background">
+  <section id="applicationsPage" class="background">
     <div class="pageContent">
-      <h1>Knowledges</h1>
-      <p>Besides official documentations, I'm usually studyng in <a href="https://cursos.alura.com.br/user/samekh"
+      <h1>Applications</h1>
+      <p>Applications goes here<br> <a href="https://cursos.alura.com.br/user/samekh"
           target="_blank" rel="noreferrer noopener">Alura</a> and <a href="https://www.codecademy.com/profiles/iSamekh"
-          target="_blank" rel="noreferrer noopener">codeCademy</a><br>Also some <a href="#projectsPage"
-          onclick="pageMove(1)">Projects</a> done.</p>
+          target="_blank" rel="noreferrer noopener">codeCademy</a>
       <a class="toLeft" href="#aboutMe" onclick="pageMove(-1)"></a>
       <a class="toBottom" href="#contactPage" onclick="pageMove(2)"></a>
     </div>
   </section>
 
-  <section id="projectsPage" class="background">
+  <section id="designsPage" class="background">
     <div class="pageContent">
-      <h1>Projects</h1>
-      <p>Hosted in <a href="https://github.com/iSamekh" target="_blank" rel="noreferrer noopener">github</a><br>Galton
-        Board<br>Also some <a href="#knowledgePage" onclick="pageMove(-1)">Subjects</a> I've know about.</p>
+      <h1>Designs</h1>
+      <p>Designs goes here</p>
       <a class="toTop" href="#aboutMe" onclick="pageMove(-2)"></a>
       <a class="toRight" href="#contactPage" onclick="pageMove(1)"></a>
     </div>
@@ -99,9 +97,10 @@
   <section id="contactPage" class="background">
     <div class="pageContent">
       <h1>Contacts</h1>
-      <p><a href="#aboutMe" onclick="pageMove(-3)">Main</a></p>
-      <a class="toTop" href="#knowledgePage" onclick="pageMove(-2)"></a>
-      <a class="toLeft" href="#projectsPage" onclick="pageMove(-1)"></a>
+      <p>Contacts goes here</p>
+      <p>Hosted in <a href="https://github.com/iSamekh" target="_blank" rel="noreferrer noopener">github</a></p>
+      <a class="toTop" href="#applicationsPage" onclick="pageMove(-2)"></a>
+      <a class="toLeft" href="#designsPage" onclick="pageMove(-1)"></a>
     </div>
   </section>
 </body>
