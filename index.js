@@ -70,7 +70,7 @@ function arrowKey(event) {
 
       case 77: // M
         menuSlider();
-        break;
+      break;
   }
 }
 

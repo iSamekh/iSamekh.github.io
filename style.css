@@ -55,6 +55,7 @@ p {
 
 a {
   text-decoration: none;
+  cursor: pointer;
   font-weight: 900;
   font-size: 2.2vmin;
   text-shadow: 0vmin -0.4vmin var(--inverse);
@@ -63,7 +64,7 @@ a {
 
 .glowText {
   color: #EEDD11;
-  text-shadow:  0 0 0.1vmin #FFFFFF, 0 0 0.2vmin #FFFFFF, 0 0 0.3vmin #FF0000, 0 0 0.4vmin #0000FF, 0 0 1vmin #FFFFFF; 
+  text-shadow: 0 0 0.1vmin #FFFFFF, 0 0 0.2vmin #FFFFFF, 0 0 0.3vmin #FF0000, 0 0 0.4vmin #0000FF, 0 0 1vmin #FFFFFF;
 }
 
 nav {
@@ -144,7 +145,7 @@ nav {
 .switch {
   position: absolute;
   width: 6vmin;
-  height: 3.4vmin;
+  height: 2.4vmin;
 }
 
 .switch input {
@@ -167,16 +168,16 @@ nav {
 .slider:before {
   position: absolute;
   content: "";
-  height: 2.6vmin;
-  width: 2.6vmin;
-  left: 0.4vmin;
-  bottom: 0.4vmin;
+  height: 1.8vmin;
+  width: 1.8vmin;
+  left: 0.35vmin;
+  bottom: 0.355vmin;
   background-color: var(--bg);
   transition: 0.3s;
 }
 
 input:checked+.slider:before {
-  transform: translateX(2.6vmin);
+  transform: translateX(3.6vmin);
 }
 
 .slider.round {
@@ -269,8 +270,8 @@ section {
 .toBottom,
 .toLeft {
   content: var(--arrow);
-  height: calc(3vh + 2vw);
-  width: calc(2vw + 2vw);
+  height: calc(2vh + 2vw);
+  width: calc(3vh + 2vw);
   z-index: 20;
 }
 
