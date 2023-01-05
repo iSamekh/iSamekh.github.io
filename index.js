@@ -21,7 +21,7 @@ function menuSlider() {
 }
 
 let actualPage = 0;
-const pages = ["#aboutMe", "#applicationsPage", "#designsPage", "#contactPage"];
+const pages = ["#about", "#application", "#design", "#contact"];
 
 console.log(actualPage.key)
 function pageMove(position) {

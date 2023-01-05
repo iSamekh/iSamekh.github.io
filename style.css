@@ -123,7 +123,7 @@ nav {
   z-index: 20;
 }
 
-#aboutMe .pageContent {
+#about .pageContent {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -243,23 +243,23 @@ section {
   width: 100vw;
 }
 
-#aboutMe .pageContent {
+#about .pageContent {
   opacity: 1;
 }
 
-#applicationsPage {
+#application {
   position: relative;
   left: 100vw;
   top: -100vh;
 }
 
-#designsPage {
+#design {
   position: relative;
   left: 0vw;
   top: -100vh;
 }
 
-#contactPage {
+#contact {
   position: relative;
   left: 100vw;
   top: -200vh;
