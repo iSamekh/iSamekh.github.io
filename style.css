@@ -43,7 +43,7 @@ body {
 
 h1 {
   color: var(--txt);
-  font-size: 3.5vmax;
+  font-size: 7vmin;
   font-weight: 900;
 }
 
@@ -136,9 +136,26 @@ nav {
   border-radius: 50%;
 }
 
-#profileText {
-  width: 50vmin;
+#application .pageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+
+#design .pageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact .pageContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 /*-----------------------SWITCH--------------------------*/
 
