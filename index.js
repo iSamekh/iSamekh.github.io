@@ -21,9 +21,9 @@ function menuSlider() {
 }
 
 let actualPage = 0;
-const pages = ["#about", "#application", "#design", "#contact"];
+const pages = ["about", "application", "design", "contact"];
 
-console.log(actualPage.key)
+
 function pageMove(position) {
 
   const pageContent = document.querySelectorAll(".pageContent");
@@ -33,7 +33,12 @@ function pageMove(position) {
   pageContent[actualPage].style.opacity = "0";
 
   actualPage += position;
-  location.href = pages[actualPage]
+
+  let page = document.getElementById(pages[actualPage])
+  page.scrollIntoView()
+
+
+  console.log(pages[actualPage])
 
   nav[actualPage].classList.add("glowText");
   pageContent[actualPage].style.opacity = "1";
@@ -72,6 +77,12 @@ function arrowKey(event) {
         menuSlider();
       break;
   }
+}
+
+
+function toView(place) {
+  console.log(place)
+  document.getElementById(place).scrollIntoView();
 }
 
 document.addEventListener("keydown", arrowKey)
