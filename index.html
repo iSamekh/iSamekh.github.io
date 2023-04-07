@@ -35,7 +35,7 @@
 
     <button id="menuButton" class="pointer" onclick="menuSlider()">Menu</button>
 
-    
+
     <p>Day Mode</p>
 
     <label class="switch">
@@ -77,9 +77,12 @@
 
   <section id="application" class="background">
     <div class="pageContent">
-      
+
       <h1>Applications</h1>
-      <p>Applications goes here:<a href="https://www.samekh.dev/tetris/">Tetris</a><br>
+      <div id="applicationsDiv">
+        <a href="https://www.samekh.dev/tetris/"><img height="150vmax" src="/img/tetris.png"></a><br>
+        <a href="http://www.google.com"><img height="150vmax%" src="/img/pokemon.png"></a>
+      </div>
 
       <a class="toLeft" onclick="pageMove(-1)"></a>
       <a class="toBottom" onclick="pageMove(2)"></a>

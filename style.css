@@ -143,6 +143,14 @@ nav {
   align-items: center;
 }
 
+#applicationsDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  width: 80%;
+  height: 60%;
+}
+
 #design .pageContent {
   display: flex;
   flex-direction: column;
